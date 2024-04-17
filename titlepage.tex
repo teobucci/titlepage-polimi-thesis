@@ -1,0 +1,50 @@
+\documentclass[12pt]{book}
+\usepackage[
+    a4paper,
+    margin=3cm,
+    %showframe,
+    ]{geometry} % Adjust the page margins
+\usepackage{graphicx} % Required for including images
+\usepackage{titling} % Customizing the title section
+\usepackage{anyfontsize} % Custom font sizes
+\usepackage[T1]{fontenc}
+
+% Define the title page
+\newcommand{\titlepagecontent}{
+    \centering
+    % Placeholder for the university logo
+    \includegraphics[width=0.3\textwidth]{logo.pdf}\\
+    \vspace{0.5cm}
+    {\large Scuola di <Nome Scuola>\par}
+    {\large Corso di Laurea <Magistrale o Triennale> in <Nome Corso>\par}
+    \vspace{3cm}
+    %\rule{\textwidth}{1pt}
+    {\LARGE\bfseries <Titolo della Tesi:\par Testo In Nuova Riga>\par}
+    %\rule{\textwidth}{1pt}
+    \raggedright
+    \vfill
+    {\large Advisor:\par Prof. <Nome Cognome>\par}
+    \vspace{0.5cm}
+    {\large Co-advisors:\par Prof. <Nome1 Cognome1>\par Dott. <Nome2 Cognome2>\par}
+    \vspace{1cm}
+    %\raggedleft
+    \begin{flushright}
+        \begin{minipage}{0.3\textwidth}
+            \raggedright
+            {\large Author:\par <Nome Cognome>\par}
+            \vspace{0.2cm}
+            {\large Student ID:\par <Matricola>\par}
+        \end{minipage}
+    \end{flushright}
+    \centering
+    \vfill
+    {\large Academic Year: 20XX-XX\par}
+}
+
+\begin{document}
+
+\begin{titlingpage}
+    \titlepagecontent
+\end{titlingpage}
+
+\end{document}
